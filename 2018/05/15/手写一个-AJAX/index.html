@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -94,17 +94,18 @@
 
 
 
-<meta name="description" content="责任始自梦中">
+<meta name="description" content="手写一个 AJAX面试过程要求手写一个 AJAX ，于是乎水一篇博文。 //创建 XMLHttpRequest 对象 var ajax = new XMLHttpRequest(); //规定请求的类型、URL 以及是否异步处理请求。 ajax.open(&amp;apos;GET&amp;apos;,url,true); //发送信息至服务器时内容编码类型 ajax.setRequestHeader(&amp;quot">
+<meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="手写一个 AJAX">
 <meta property="og:url" content="http://numacraw.com/2018/05/15/手写一个-AJAX/index.html">
 <meta property="og:site_name" content="numacraw">
-<meta property="og:description" content="责任始自梦中">
+<meta property="og:description" content="手写一个 AJAX面试过程要求手写一个 AJAX ，于是乎水一篇博文。 //创建 XMLHttpRequest 对象 var ajax = new XMLHttpRequest(); //规定请求的类型、URL 以及是否异步处理请求。 ajax.open(&amp;apos;GET&amp;apos;,url,true); //发送信息至服务器时内容编码类型 ajax.setRequestHeader(&amp;quot">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-15T01:45:52.870Z">
+<meta property="og:updated_time" content="2018-05-15T01:55:17.692Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="手写一个 AJAX">
-<meta name="twitter:description" content="责任始自梦中">
+<meta name="twitter:description" content="手写一个 AJAX面试过程要求手写一个 AJAX ，于是乎水一篇博文。 //创建 XMLHttpRequest 对象 var ajax = new XMLHttpRequest(); //规定请求的类型、URL 以及是否异步处理请求。 ajax.open(&amp;apos;GET&amp;apos;,url,true); //发送信息至服务器时内容编码类型 ajax.setRequestHeader(&amp;quot">
 
 
 
@@ -350,7 +351,21 @@
       
 
       
-        
+        <h2 id="手写一个-AJAX"><a href="#手写一个-AJAX" class="headerlink" title="手写一个 AJAX"></a>手写一个 AJAX</h2><p>面试过程要求手写一个 AJAX ，于是乎水一篇博文。</p>
+<pre><code>//创建 XMLHttpRequest 对象
+var ajax = new XMLHttpRequest();
+//规定请求的类型、URL 以及是否异步处理请求。
+ajax.open(&apos;GET&apos;,url,true);
+//发送信息至服务器时内容编码类型
+ajax.setRequestHeader(&quot;Content-type&quot;, &quot;application/x-www-form-urlencoded&quot;); 
+//发送请求
+ajax.send(null);  
+//接受服务器响应数据
+ajax.onreadystatechange = function () {
+    if (obj.readyState == 4 &amp;&amp; (obj.status == 200 || obj.status == 304)) { 
+    }
+};
+</code></pre>
       
     </div>
     
@@ -364,6 +379,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+        </div>
       
 
       
@@ -434,8 +455,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -521,6 +551,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#手写一个-AJAX"><span class="nav-number">1.</span> <span class="nav-text">手写一个 AJAX</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

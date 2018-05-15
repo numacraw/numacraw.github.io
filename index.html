@@ -355,7 +355,21 @@
       
         
           
-            
+            <h2 id="手写一个-AJAX"><a href="#手写一个-AJAX" class="headerlink" title="手写一个 AJAX"></a>手写一个 AJAX</h2><p>面试过程要求手写一个 AJAX ，于是乎水一篇博文。</p>
+<pre><code>//创建 XMLHttpRequest 对象
+var ajax = new XMLHttpRequest();
+//规定请求的类型、URL 以及是否异步处理请求。
+ajax.open(&apos;GET&apos;,url,true);
+//发送信息至服务器时内容编码类型
+ajax.setRequestHeader(&quot;Content-type&quot;, &quot;application/x-www-form-urlencoded&quot;); 
+//发送请求
+ajax.send(null);  
+//接受服务器响应数据
+ajax.onreadystatechange = function () {
+    if (obj.readyState == 4 &amp;&amp; (obj.status == 200 || obj.status == 304)) { 
+    }
+};
+</code></pre>
           
         
       
